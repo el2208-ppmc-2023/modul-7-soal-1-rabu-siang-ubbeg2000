@@ -94,7 +94,7 @@
       "name": "10",
       "setup": "",
       "run": "./main",
-      "input": "100\r\n1\r\nRamadhan Tiba2\r\n3",
+      "input": "100\r\n1\r\nRamadhan Tiba\r\n2\r\n3",
       "output": "Lagu Ramadhan Tiba berhasil ditambahkan ke dalam playlist",
       "comparison": "included",
       "timeout": 1,
