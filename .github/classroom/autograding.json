@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "2\r\n3",
+      "output": "Tidak ada lagu yang dapat diputar",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nDream On\r\n1\r\nKomang\r\n3",
+      "output": "1. Dream On\r\n2. Komang",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nSZA - Kill Bill\r\n1\r\nStay With Me\r\n2\r\n3",
+      "output": "Lagu SZA - Kill Bill sedang diputar",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nLagu1\r\n1\r\nLagu2\r\n1\r\nLagu3\r\n1\r\nLagu4\r\n2\r\n2\r\n3",
+      "output": "Lagu Lagu2 sedang diputar",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "0\r\n3",
+      "output": "Pilihan tidak valid!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nLagu Lama\r\n2\r\n3",
+      "output": "Playlist kosong",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nLalala\r\n1\r\nLilili\r\n2\r\n2\r\n2\r\n3",
+      "output": "Tidak ada lagu yang dapat diputar",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nRoundabout\r\n2\r\n2\r\n3",
+      "output": "Lagu Roundabout berhasil ditambahkan ke dalam playlist",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "",
+      "run": "./main",
+      "input": "-1\r\n10\r\n3",
+      "output": "Pilihan tidak valid!",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./main",
+      "input": "100\r\n1\r\nRamadhan Tiba\r\n2\r\n3",
+      "output": "Lagu Ramadhan Tiba berhasil ditambahkan ke dalam playlist",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
