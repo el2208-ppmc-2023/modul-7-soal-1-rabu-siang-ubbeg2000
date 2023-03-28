@@ -73,6 +73,13 @@ int main() {
             case 1:
                 printf("Masukkan judul lagu: ");
                 scanf(" %[^\n]", title); //Gunakan ini untuk input string dengan spasi
+                for (int i = 0; i < strlen(title); i++)
+                {
+                    if (title[i] == '\n')
+                    {
+                        title[i] = 0;
+                    }
+                }
                 enqueue(&q, title);
                 printf("Lagu %s berhasil ditambahkan ke dalam playlist\n", title);
                 break;
