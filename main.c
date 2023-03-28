@@ -72,7 +72,7 @@ int main() {
         switch (choice) {
             case 1:
                 printf("Masukkan judul lagu: ");
-                scanf(" %[^\n]", title); //Gunakan ini untuk input string dengan spasi
+                scanf(" %[^\r\n]%*c", title); //Gunakan ini untuk input string dengan spasi
                 for (int i = 0; i < 100; i++)
                 {
                     if (title[i] == '\n')
